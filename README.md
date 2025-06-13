@@ -1,1 +1,1 @@
-This is page fot links.
+This is page for links.
