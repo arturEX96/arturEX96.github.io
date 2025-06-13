@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://192.168.1.80/ -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезные ссылки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(13, 19, 33, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            color: #a0aec0;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .link-card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(74, 85, 104, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(66, 153, 225, 0.5);
+        }
+        
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            color: #63b3ed;
+        }
+        
+        .link-title i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .link-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .link-item a {
+            color: #90cdf4;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            word-break: break-all;
+            line-height: 1.5;
+            flex: 1;
+        }
+        
+        .link-item a:hover {
+            color: #63b3ed;
+            text-decoration: underline;
+        }
+        
+        .link-badge {
+            background: rgba(66, 153, 225, 0.2);
+            color: #63b3ed;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        
+        .link-note {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+        
+        .link-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            min-width: 24px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./Полезные ссылки_files/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bookmark"></i> Полезные ссылки</h1>
+            <p class="subtitle">Собрание полезных ресурсов для загрузки программ, игр и инструментов для работы</p>
+        </header>
+        
+        <div class="links-grid">
+            <!-- Anydesk -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-desktop"></i> Anydesk</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://anydesk.com/en/downloads/thank-you?dv=win_exe" target="_blank">https://anydesk.com/en/downloads/thank-you?dv=win_exe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Torrent -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-cloud-download-alt"></i> Torrent</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://www.fosshub.com/qBittorrent.html" target="_blank">https://www.fosshub.com/qBittorrent.html</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Steam -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fab fa-steam"></i> Steam</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://store.steampowered.com/about/" target="_blank">https://store.steampowered.com/about/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пиратские игры -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-skull-crossbones"></i> Пиратские игры</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://byrutgame.org/" target="_blank">https://byrutgame.org/</a>
+                        <span class="link-badge">byrutgame</span>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://online-fix.me/" target="_blank">https://online-fix.me/</a>
+                        <span class="link-badge">online-fix</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ZAPRET -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-ban"></i> ZAPRET Для Discord и Youtube</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://github.com/Flowseal/zapret-discord-youtube/releases/download/1.7.2b/zapret-discord-youtube-1.7.2b.rar" target="_blank">Скачать zapret-discord-youtube-1.7.2b.rar</a>
+                    </div>
+                    <div class="link-note">
+                        Инструмент для блокировки рекламы в Discord и YouTube
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AMAZING -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-star"></i> AMAZING</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://amazing-online.com/" target="_blank">https://amazing-online.com/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- VPN -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-shield-alt"></i> VPN</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://amnezia.org/en/downloads" target="_blank">https://amnezia.org/en/downloads</a>
+                    </div>
+                    <div class="link-note">
+                        За ключами к @a.blessed96
+                    </div>
+                </div>
+            </div>
+            
+            <!-- История скачивания торрентов -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-history"></i> История скачивания торрентов</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://iknowwhatyoudownload.com/" target="_blank">https://iknowwhatyoudownload.com/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Программы -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-window-restore"></i> Программы</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://1progs.ru/" target="_blank">https://1progs.ru/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Мультиустановщик программ -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-boxes"></i> Мультиустановщик программ</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://ninite.com/" target="_blank">https://ninite.com/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Epic Games -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-gamepad"></i> Epic Games</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://store.epicgames.com/ru/download" target="_blank">https://store.epicgames.com/ru/download</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Winrar -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-file-archive"></i> Winrar</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://1progs.ru/winrar/" target="_blank">https://1progs.ru/winrar/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Бесплатные антивирусы -->
+            <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-shield-virus"></i> Бесплатные антивирусы</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://www.kaspersky.ru/downloads/free-antivirus" target="_blank">Kaspersky Free</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="https://www.eset.com/us/home/online-scanner/" target="_blank">ESET Online Scanner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Страница создана для удобного доступа к полезным ресурсам | Все ссылки ведут на официальные источники</p>
+            <p>Обновлено: июнь 2024</p>
+        </footer>
+    </div>
+
+</body></html>
