@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapret</title>
+    <link rel="icon" href="/logo.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff0303, #002fff57, #c22828);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(13, 19, 33, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            color: #a0aec0;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .link-card {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(74, 85, 104, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(66, 153, 225, 0.5);
+        }
+        
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            color: #63b3ed;
+        }
+        
+        .link-title i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .link-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .link-item a {
+            color: #90cdf4;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            word-break: break-all;
+            line-height: 1.5;
+            flex: 1;
+        }
+        
+        .link-item a:hover {
+            color: #63b3ed;
+            text-decoration: underline;
+        }
+        
+        .link-badge {
+            background: rgba(66, 153, 225, 0.2);
+            color: #63b3ed;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        
+        .link-note {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+        
+        .link-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            min-width: 24px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+            </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bookmark"></i> Zapret</h1>
+            <p class="subtitle">Инструкция по работе Программного обеспечения Zapret</p>
+        </header>
+        <div class="link-card">
+                <h3 class="link-title"><i class="fas fa-ban"></i> ZAPRET Для Discord и Youtube</h3>
+                <div class="link-content">
+                    <div class="link-item">
+                        <a href="https://github.com/Flowseal/zapret-discord-youtube/releases/" target="_blank">Скачать zapret-discord-youtube</a>
+                    </div>
+                    <div class="link-note">
+                        Для работы данного программного обеспечения необходимо загрузить последнюю версию в любом удобном для вас формате (.rar или .zip), после чего необходимо распаковать скачанный архив в папку с Латинским названием а далее в данной папке нужно запустить стратегию для обхода (general.bat). Если данная стратегия не дала доступа к указанным ресурсам тогда необходимо использовать любую другую (допустим general (ALT2.bat)). Для удобства можно после подбора стратегии настроить её автозапуск в службах: (service.bat>1>*Выбранная вами стратегия*>ENTER)
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <p>Страница создана для удобного доступа к полезным ресурсам | Все ссылки ведут на официальные источники</p>
+            <p>Обновлено: 31 июля 2025</p>
+        </footer>
+</html>
+        
